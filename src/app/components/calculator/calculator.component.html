@@ -1,0 +1,36 @@
+<div class="calculator-container">
+  <div class="results-container" [class.has-text]="getEquation() !== ''" [class.has-no-text]="getEquation() === ''">
+    {{ getEquation() }}
+  </div>
+  <div class="buttons-container">
+    <div class="button-row">
+      <app-button [type]="inputType.Clear" ></app-button>
+      <app-button [disabled]="true"></app-button>
+      <app-button [disabled]="true"></app-button>
+      <app-button [type]="inputType.Operand" [operandType]="operandType.Division"></app-button>
+    </div>
+    <div class="button-row">
+      <app-button [type]="inputType.Number" value="7"></app-button>
+      <app-button [type]="inputType.Number" value="8"></app-button>
+      <app-button [type]="inputType.Number" value="9"></app-button>
+      <app-button [type]="inputType.Operand" [operandType]="operandType.Multiplication"></app-button>
+    </div>
+    <div class="button-row">
+      <app-button [type]="inputType.Number" value="4"></app-button>
+      <app-button [type]="inputType.Number" value="5"></app-button>
+      <app-button [type]="inputType.Number" value="6"></app-button>
+      <app-button [type]="inputType.Operand" [operandType]="operandType.Subtraction"></app-button>
+    </div>
+    <div class="button-row">
+      <app-button [type]="inputType.Number" value="1"></app-button>
+      <app-button [type]="inputType.Number" value="2"></app-button>
+      <app-button [type]="inputType.Number" value="3"></app-button>
+      <app-button [type]="inputType.Operand" [operandType]="operandType.Addition"></app-button>
+    </div>
+    <div class="button-row">
+      <app-button [type]="inputType.Number" value="0"></app-button>
+      <app-button [type]="inputType.Number" value="."></app-button>
+      <app-button [type]="inputType.Operand" [operandType]="operandType.Equals"></app-button>
+    </div>
+  </div>
+</div>

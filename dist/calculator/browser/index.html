@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-beasties-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+      if (isStandalone) {
+        window.moveTo(16, 16); // Move to coordinates (16, 16)
+        window.resizeTo(515, 920); // Resize to 800x600
+      }
+    });
+    // let deferredPrompt;
+
+    // window.addEventListener('beforeinstallprompt', (e) => {
+    //   // Prevent the mini-infobar from appearing on mobile
+    //   e.preventDefault();
+    //   // Stash the event so it can be triggered later.
+    //   deferredPrompt = e;
+
+    //   // Optionally, send analytics event that PWA install promo was shown.
+    //   console.log(`'beforeinstallprompt' event was fired.`);
+    // });
+
+    // document.addEventListener('click', async () => {
+    //   // Show the install prompt
+    //   deferredPrompt.prompt();
+    //   // Wait for the user to respond to the prompt
+    //   const { outcome } = await deferredPrompt.userChoice;
+    //   // Optionally, send analytics event with outcome of user choice
+    //   console.log(`User response to the install prompt: ${outcome}`);
+    //   // We've used the prompt and can't use it again, throw it away
+    //   deferredPrompt = null;
+    // });
+  </script>
+<style>body{margin:0;overflow:hidden;overscroll-behavior-y:contain}</style><link rel="stylesheet" href="styles-IJ5GJWB6.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-IJ5GJWB6.css"></noscript></head>
+
+<body>
+  <app-root></app-root>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-FBE6SBKG.js" type="module"></script></body>
+
+</html>
