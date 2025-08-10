@@ -60,12 +60,6 @@ $angle: 0%;
   overflow: hidden;
 }
 
-.button:hover {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #efefef;
-}
-
 .button::before {
     content: "";
     position: absolute;
@@ -158,8 +152,16 @@ $angle: 0%;
     }
   }
 
-  @media (hover: none) and (pointer: coarse) {
+@media (hover: none) and (pointer: coarse) {
     .button:hover {
       border: 0px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #efefef;
   }
 }
