@@ -40,17 +40,12 @@ export class ButtonComponent implements OnInit {
             }
         });
 
-        addEventListener("animationcancel", (event: AnimationEvent) => {
-            if (event.animationName.indexOf('ripple') !== -1 && this.componentId === (event.target as HTMLDivElement).id) {
-                this.clicked = false;
-            }       
-        });
-
         this.setValueForOperands();
         this.setValueForSpecialButtons();
     }
-    public triggerClick() {
+    public triggerClick($event: any) {
         this.clicked = true;
+        $event.stopPropagation();
         this.equationService.appendToEquation(this.value);
         if (navigator.vibrate !== undefined) {
             navigator.vibrate(100);

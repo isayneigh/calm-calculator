@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --base-href /",
-    "build-prod": "ng build --base-href /calm-calculator --configuration production",
+    "build-prod": "ng build --base-href /calm-calculator/ --configuration production",
     "watch": "ng build --watch --configuration development",
     "serve-pwa": "ng build --configuration production && http-server --bind 0.0.0.0 -p 8080 -c-1 docs",
     "test": "ng test"

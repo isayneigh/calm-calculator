@@ -1,6 +1,6 @@
 <div [class.disabled]="disabled" [id]="componentId" [class.button-clicked]="clicked"
     [ngClass]="operandType === referenceOperandType.Equals ? 'button-2' : 'button'" role="button"
-    (mouseup)="triggerClick()">
+    (mouseup)="triggerClick($event)" (touchend)="triggerClick($event)">
     {{ value }}
 </div>
 <!-- <div class="ripple" [id]="componentId" [class.ripple-clicked]="clicked">

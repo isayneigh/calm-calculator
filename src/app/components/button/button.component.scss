@@ -119,7 +119,7 @@ $angle: 0%;
 
 .button-2 {
     @extend .button;
-    width: calc(100vw / 2);
+    min-width: calc(100vw / 2);
 }
 
 .button-clicked {
