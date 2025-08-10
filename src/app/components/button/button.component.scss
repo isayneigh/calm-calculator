@@ -158,8 +158,8 @@ $angle: 0%;
     }
   }
 
-  @media (pointer: coarse) {
-    *:hover {
-      all: revert-layer;
-    }
+  @media (hover: none) and (pointer: coarse) {
+    .button:hover {
+      border: 0px;
   }
+}
