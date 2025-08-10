@@ -53,7 +53,7 @@ export class ButtonComponent implements OnInit {
         this.clicked = true;
         this.equationService.appendToEquation(this.value);
         if (navigator.vibrate !== undefined) {
-            navigator.vibrate(200);
+            navigator.vibrate(100);
         }
     }
 

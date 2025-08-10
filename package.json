@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --base-href /",
+    "build-prod": "ng build --base-href /calm-calculator --configuration production",
     "watch": "ng build --watch --configuration development",
-    "pwa": "ng build --configuration production && http-server --bind 0.0.0.0 -p 8080 -c-1 dist/calculator/browser",
+    "serve-pwa": "ng build --configuration production && http-server --bind 0.0.0.0 -p 8080 -c-1 docs",
     "test": "ng test"
   },
   "private": true,
