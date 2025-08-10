@@ -157,3 +157,9 @@ $angle: 0%;
       left: 100%;
     }
   }
+
+  @media (pointer: coarse) {
+    *:hover {
+      all: revert-layer;
+    }
+  }
